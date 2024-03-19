@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.btn-custom {
+    margin: 2px;
+}
+
 .table-sm th,
 .table-sm td {
     padding: 0.5rem;

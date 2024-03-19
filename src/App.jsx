@@ -38,15 +38,15 @@ function App() {
                 </label>
             </div>
             <div className="d-flex">
-                <button className="btn btn-success mr-2" onClick={calcularIMC}>Calcular IMC</button>
-                <button className="btn btn-secondary" onClick={() => setExibirTabela(!exibirTabela)}>Exibir Tabela IMC</button>
+                <button className="btn btn-success mr-2 btn-custom" onClick={calcularIMC}>Calcular IMC</button>
+                <button className="btn btn-secondary btn-custom" onClick={() => setExibirTabela(!exibirTabela)}>Exibir Tabela IMC</button>
             </div>
             {mensagemErro && <div className="alert alert-warning mt-3" role="alert">{mensagemErro}</div>}
             {imc && <p>Seu IMC é: {imc}</p>}
             {exibirTabela &&
-                <div className="mt-5">
+                <div className="mt-5" style={{ maxWidth: '600px' }}>
                     <h2>Tabela IMC (OMS)</h2>
-                    <table className="table">
+                    <table className="table table-sm">
                         <thead>
                             <tr>
                                 <th scope="col">Classificação</th>
